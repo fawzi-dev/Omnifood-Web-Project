@@ -51,6 +51,8 @@
   /*  For header to be sticky*/
   height: 9.6rem;
   padding: 0 4.8rem;
+
+  position: relative;
 }
 
 .logo {
@@ -65,7 +67,7 @@
 .main-nav-list {
   list-style: none;
   display: flex;
-  gap: 3.2rem;
+  gap: 4.8rem;
   align-items: center;
 }
 
@@ -102,6 +104,27 @@
 .main-nav-link.nav-cta:hover,
 .main-nav-link.nav-cta:active {
   background-color: #cf711f;
+}
+
+
+/* Mobile nav button */
+.btn-mobile-nav {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="menu-outline"] {}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
 }
 
 /* *************************** */
@@ -215,7 +238,7 @@
 /* *************************** */
 
 .section-how {
-  padding: 9.6rem 0;
+  padding: 9.6rem 3.2rem;
 
 }
 
@@ -280,7 +303,7 @@
 
 
 .section-meals {
-  padding: 9.6rem 0;
+  padding: 9.6rem;
 }
 
 .meals {
@@ -379,6 +402,7 @@
   display: flex;
   align-items: center;
   gap: 1.6rem;
+  line-height: 1.2;
 }
 
 .all-recipes {
@@ -544,7 +568,9 @@
 /* FEATURE ICON */
 /* *************************** */
 
-.feature {}
+.feature {
+  padding: 0 3.2rem;
+}
 
 .feature-icon {
   color: #e67e22;
@@ -575,7 +601,7 @@
 }
 
 .section-cta {
-  padding: 4.8rem 0 12.8rem 0;
+  padding: 4.8rem 3.2rem;
 }
 
 .cta {
@@ -584,30 +610,13 @@
   background-color: #e67e22;
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.25);
   border-radius: 11px;
-  overflow: hidden;
 
   background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
 
-  /* tEMPO */
-  height: 50rem;
+  overflow: hidden;
 }
 
 
-.cta-img-box {
-  background-image: linear-gradient(to right bottom,
-      rgb(235, 151, 78, 0.35), rgba(230, 125, 34, 0.35)), url('../img/eating.jpg');
-
-  background-size: cover;
-  background-position: center;
-
-}
-
-
-.cta-text-box {
-  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
-  color: #45260a;
-
-}
 
 .cta .heading-secondary {
   color: #45260a;
@@ -627,6 +636,23 @@
   grid-template-columns: 1fr 1fr;
   column-gap: 3.2rem;
   row-gap: 2.4rem;
+}
+
+
+.cta-img-box {
+  background-image: linear-gradient(to right bottom,
+      rgb(235, 151, 78, 0.35), rgba(230, 125, 34, 0.35)), url('../img/eating.jpg');
+
+  background-size: cover;
+  background-position: center;
+
+}
+
+
+.cta-text-box {
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  color: #45260a;
+
 }
 
 .cta-form label {
@@ -679,9 +705,9 @@ select {
 /* FOOTER */
 
 .footer {
-  padding: 12.8rem 0;
+  padding: 12.8rem 3.2rem;
   border-top: 1px solid #eee;
-  
+
 }
 
 .footer-heading {
@@ -690,7 +716,7 @@ select {
   margin-bottom: 4rem;
 }
 
-.footer-logo{
+.footer-logo {
   display: block;
   margin-bottom: 3.2rem;
 }
@@ -716,31 +742,31 @@ select {
   color: #555;
 }
 
-.social-links{
+.social-links {
   list-style: none;
   display: flex;
   gap: 2.4rem;
 
 }
 
-.social-icon{
+.social-icon {
   height: 2.4rem;
   width: 2.4rem;
 }
 
-.copyright{
+.copyright {
   font-size: 1.4rem;
   color: #767676;
   line-height: 1.6;
   margin-top: auto;
 }
 
-.logo-col{
+.logo-col {
   display: flex;
   flex-direction: column;
 }
 
-.contact{
+.contact {
   font-style: normal;
   font-size: 1.6rem;
   line-height: 1.6;
@@ -748,6 +774,6 @@ select {
 }
 
 
-.address{
+.address {
   margin-bottom: 2.4rem;
 }
