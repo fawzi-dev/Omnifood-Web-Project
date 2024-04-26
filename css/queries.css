@@ -198,3 +198,163 @@ Instead, 1rem = 1em = 16px
     font-size: 3rem;
   }
 }
+
+
+
+/* ************************** */
+/* BELOW  704px               */
+/* ************************** */
+
+@media (max-width:44em) {
+
+
+
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .diets {
+    grid-column: 1/-1;
+    justify-self: center;
+  }
+
+  .heading-secondary {
+    font-size: 4.8rem;
+  }
+
+  .section-pricing {
+    padding: 9.6rem 3.2rem;
+  }
+
+  .pricing-plan {
+    width: 100%;
+  }
+
+  .grid--footer {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .nav-col {
+    grid-row: 1;
+    grid-column: span 2;
+    margin-bottom: 3.2rem;
+  }
+
+  .logo-col,
+  .address-col {
+    grid-column: span 3;
+  }
+}
+
+
+
+@media (max-width:34em) {
+  .grid {
+    row-gap: 4.8rem;
+  }
+
+  .grid--2-cols,
+  .grid--3-cols,
+  .grid--4-cols,
+  .grid--5-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .heading-secondary {
+    font-size: 2.6rem;
+  }
+
+  .hero {
+    padding: 0 3.2rem;
+  }
+
+  .section-hero {
+    padding: 2.4rem 0 6.4rem 0;
+  }
+
+
+  .btn,
+  .btn:link,
+  .btn:visited {
+    padding: 2.4rem 1.6rem;
+  }
+
+  .hero-img {
+    width: 80%;
+  }
+
+  .logos img {
+    height: 1.2rem;
+  }
+
+  .step-img-box:nth-child(2) {
+    grid-row: 1;
+  }
+
+  .step-img-box:nth-child(6) {
+    grid-row: 5;
+  }
+
+
+  .step-img-box {
+    transform: translateY(2.4rem);
+  }
+
+
+  .section-testimonials {
+    padding: 0;
+  }
+
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    display: flex;
+    flex-wrap: nowrap;
+    /* Prevent wrapping to next line */
+    overflow-x: auto;
+    /* Enable horizontal scrolling */
+    -webkit-overflow-scrolling: touch;
+    /* Enable smooth scrolling on iOS */
+    scroll-snap-type: x mandatory;
+    /* Enable snapping behavior */
+    padding: 0 1.2rem;
+
+  }
+
+  .gallery::-webkit-scrollbar {
+    display: none;
+  }
+
+  .gallery-item {
+
+    border-radius: 0.4rem;
+    width: 75%;
+    flex: 0 0 auto;
+    /* Prevent items from growing or shrinking */
+    margin-right: 0;
+
+    /* Snap items to the start of the scroll container */
+    padding: 0;
+  }
+
+  .gallery-item img {
+    max-width: 100%;
+  }
+
+  .cta {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-img-box {
+    height: 32rem;
+    grid-row: 1;
+  }
+
+  .cta-text-box {
+    padding: 3.2rem;
+  }
+
+}
