@@ -5,6 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link rel="icon" href="./img/favicon.png">
+  <link rel="apple-touch-icon" href="./img/apple-touch-icon.png">
+  <link rel="apple-touch-icon" href="manifest.webmanifest">
+  <meta name="description"
+    content="We are a technology company first, but with a major focus on consumer well-being through a healthy diet. Most people are very busy with their jobs, family and friends, and other important activities, which doesn't leave much time for cooking.">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
@@ -16,22 +22,24 @@
 
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script defer src="./js/script.js"></script>
+  <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
 
-  <title>Omnifood</title>
+  <title>Omnifood &mdash; Never cook again!</title>
 </head>
 
 <body>
 
-  <header class="header">
+  <header class="header ">
     <a href="#">
       <img src="img/omnifood-logo.png" alt="Omnifood Logo" class="logo">
     </a>
     <nav class="main-nav">
       <ul class="main-nav-list">
-        <li><a class="main-nav-link" href="#">How it works</a></li>
-        <li><a class="main-nav-link" href="#">Meals</a></li>
-        <li><a class="main-nav-link" href="#">Testimonial</a></li>
-        <li><a class="main-nav-link" href="#">Pricing</a></li>
+        <li><a class="main-nav-link" href="#how">How it works</a></li>
+        <li><a class="main-nav-link" href="#meals">Meals</a></li>
+        <li><a class="main-nav-link" href="#testimonial">Testimonial</a></li>
+        <li><a class="main-nav-link" href="#pricing">Pricing</a></li>
         <li><a class="main-nav-link nav-cta" href="#">Try for free</a></li>
       </ul>
     </nav>
@@ -53,7 +61,7 @@
             personal
             tastes and nutritional needs. We have delivered 250,000+ meals last year!</p>
 
-          <a href="#" class="btn btn--full margin-right-sm">Start eating well</a>
+          <a href="#cta" class="btn btn--full margin-right-sm">Start eating well</a>
           <a href="#" class="btn btn--outline">Learn more &darr;</a>
           <div class="delivered-meals">
             <div class="delivered-imgs">
@@ -70,7 +78,13 @@
         </div>
 
         <div class="hero-img-box">
-          <img src="./img/hero.png" class="hero-img"
+
+          <picture>
+            <source srcset="./img/hero.webp" type="image/webp" />
+            <source srcset="./img/hero.png" type="image/png" />
+          </picture>
+
+          <img src="./img/hero.webp" class="hero-img"
             alt=" Women enjoying food, meals in storage, a food bowls on a table">
         </div>
       </div>
@@ -93,7 +107,7 @@
 
 
 
-    <section class="section-how ">
+    <section class="section-how " id="how">
       <div class="container">
 
 
@@ -160,7 +174,7 @@
       </div>
     </section>
 
-    <section class="section-meals">
+    <section class="section-meals" id="meals">
       <div class="container center-text">
         <span class="subheading">Meals</span>
         <h2 class="heading-secondary">Omnifood AI chooses from 5,000+ recipes</h2>
@@ -285,7 +299,7 @@
     </section>
 
 
-    <section class="section-testimonials ">
+    <section class="section-testimonials " id="testimonial">
 
 
       <div class="testimonial-container">
@@ -394,7 +408,7 @@
     </section>
 
 
-    <section class="section-pricing">
+    <section class="section-pricing" id="pricing">
       <div class="container center-text">
         <span class="subheading">Pricing</span>
         <h2 class="heading-secondary">Eating well without breaking the bank</h2>
@@ -509,7 +523,7 @@
     </section>
 
 
-    <section class="section-cta">
+    <section class="section-cta" id="cta">
       <div class="container">
         <div class="cta">
           <div class="cta-text-box">
@@ -576,7 +590,7 @@
         </ul>
 
         <p class="copyright">
-          Copyright &copy; 2024 by Omnifood,
+          Copyright &copy; <span class="year">2024</span> by Omnifood,
           Inc.All rights reserved.
         </p>
       </div>
